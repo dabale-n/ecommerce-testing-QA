@@ -16,7 +16,7 @@ test-cases → Detailed test cases for major modules (Profile, Cart, Payment, Co
 
 Tools Used
 - Browser: Chrome 139
-- OS: Windows 10
+- OS: Windows 11
 - Test Documentation: Excel/Google Sheets  
 
 Major findings:
