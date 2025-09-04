@@ -1,6 +1,6 @@
  E-commerce Website QA Testing
-
-This repository contains my manual QA testing work for a fully developed e-commerce website with an admin dashboard.  
+ 
+ This repository contains my manual QA testing work for a fully developed e-commerce website with an admin dashboard.  
 The goal was to test core functionalities, validate inputs, check UI responsiveness, and report defects.
 
  Repository Structure
