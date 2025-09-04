@@ -1,0 +1,23 @@
+                                                                                                 Demo E-Commerce Website � Defect Report,,,,,,,,,,
+Bug ID,Title,Description,Severity,Priority,Steps to Reproduce,Expected Result,Actual Resalt,Attachments,Environment,Comment
+,                   Customer Side,,,,,,,,,
+BUG001,Phone number field accepts invalid input (letters/symbols),"On the Profile Update page, the phone number field does not validate input format. The system allows alphabetic and special character inputs to be saved as phone numbers. This can lead to invalid contact details being stored, which affects order delivery and user communication.",Medium,High,"1. Log in as a registered user
+2. Navigate to Profile Update page
+3. Enter ""921053296abcd"" in the phone number field
+4. Click Update","System should validate phone number input and show an error message:
+""Please enter a valid phone number.""",System accepts invalid input and saves it successfully.,"=DISPIMG(""ID_239F7FB13B3F4FF6888A7497224F7762"",1)","Chrome 139, Windows 11",
+BUG002,Bank Deposit payment allows submission with empty transaction ID field,"When a user selects Bank Deposit payment method and leaves the transaction ID field empty, clicking Pay reloads the page without showing any validation error. This creates confusion and prevents the user from knowing why payment did not proceed.",High,High,"1. Add a product to cart and go to checkout
+2. Select Bank Deposit payment method
+3. Leave transaction ID textarea empty
+4. Click Pay","System should validate input and show error message:
+�Transaction ID is required.�",System reloads the payment page silently without any validation message.,"=DISPIMG(""ID_90989863A52B4113A437C8A537B728A8"",1)","Chrome 139, Windows 11",
+BUG003,Cart page items overflow the screen in mobile view,"On the cart page, when viewed in mobile resolution, the list of cart items does not resize properly and overflows the screen. This creates a poor user experience on mobile devices, making it difficult to view or interact with cart elements.",Medium,Medium,"1. Add one or more products to cart
+2. Navigate to Cart Page
+3. Switch to mobile view 
+4. Observe layout behavior","Cart items should be fully visible within the mobile screen, with responsive design applied.","Cart items overflow the screen horizontally, causing layout breakage.","=DISPIMG(""ID_C0A6A5256D70411AAE8F2013A0C6D664"",1)","Chrome 139, Windows 11-mobile view ",
+BUG004,Contact Us page accepts invalid phone numbers without validation,"On the Contact Us page, the phone number input field does not validate the entered data. The system accepts alphabets, symbols, or incomplete numeric values as valid input and allows the form to be submitted. This can lead to incorrect or unusable contact information being stored in the system.",Medium,High,"1. Open the Contact Us page.
+2. Enter an invalid phone number
+3. Fill other required fields.
+4. Submit the form.",The phone number field should validate input to allow only valid phone formats. Error message should appear for invalid numbers.,Form is submitted successfully without validating the phone number.,"=DISPIMG(""ID_FBFE0C0A39754C88BE0550821F7DE461"",1)","Chrome 139, Windows 11",
+,                   Admin Side,,,,,,,,,
+,,,,,,,,,,
